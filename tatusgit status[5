@@ -1,0 +1,348 @@
+[33m1cf81b49[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m first commit
+ .gitignore                                         |      1 [32m+[m
+ __pycache__/app.cpython-312.pyc                    |    Bin [31m0[m -> [32m7669[m bytes
+ __pycache__/app.cpython-313.pyc                    |    Bin [31m0[m -> [32m7814[m bytes
+ __pycache__/train_model.cpython-313.pyc            |    Bin [31m0[m -> [32m10496[m bytes
+ app.py                                             |    129 [32m+[m
+ class_labels.json                                  |     15 [32m+[m
+ data/archive.zip                                   |    Bin [31m0[m -> [32m708172590[m bytes
+ malaria_model.h5                                   |    Bin [31m0[m -> [32m11543976[m bytes
+ malaria_model.keras                                |    Bin [31m0[m -> [32m11592156[m bytes
+ train_model.py                                     |    132 [32m+[m
+ train_output.log                                   |    Bin [31m0[m -> [32m236482[m bytes
+ venv/Lib/site-packages/keras/export/__init__.py    |      7 [32m+[m
+ .../export/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m378[m bytes
+ .../site-packages/keras/initializers/__init__.py   |     81 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m1734[m bytes
+ venv/Lib/site-packages/keras/layers/__init__.py    |    385 [32m+[m
+ .../layers/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m13710[m bytes
+ venv/Lib/site-packages/keras/legacy/__init__.py    |      7 [32m+[m
+ .../legacy/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m354[m bytes
+ .../site-packages/keras/legacy/saving/__init__.py  |     12 [32m+[m
+ .../saving/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m452[m bytes
+ venv/Lib/site-packages/keras/losses/__init__.py    |     82 [32m+[m
+ .../losses/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m2315[m bytes
+ venv/Lib/site-packages/keras/metrics/__init__.py   |    144 [32m+[m
+ .../metrics/__pycache__/__init__.cpython-312.pyc   |    Bin [31m0[m -> [32m3682[m bytes
+ .../keras/mixed_precision/__init__.py              |     19 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m648[m bytes
+ venv/Lib/site-packages/keras/models/__init__.py    |     12 [32m+[m
+ .../models/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m624[m bytes
+ venv/Lib/site-packages/keras/ops/__init__.py       |    338 [32m+[m
+ .../keras/ops/__pycache__/__init__.cpython-312.pyc |    Bin [31m0[m -> [32m11450[m bytes
+ venv/Lib/site-packages/keras/ops/image/__init__.py |     20 [32m+[m
+ .../ops/image/__pycache__/__init__.cpython-312.pyc |    Bin [31m0[m -> [32m868[m bytes
+ .../Lib/site-packages/keras/ops/linalg/__init__.py |     20 [32m+[m
+ .../linalg/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m756[m bytes
+ venv/Lib/site-packages/keras/ops/nn/__init__.py    |     65 [32m+[m
+ .../ops/nn/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m2218[m bytes
+ venv/Lib/site-packages/keras/ops/numpy/__init__.py |    219 [32m+[m
+ .../ops/numpy/__pycache__/__init__.cpython-312.pyc |    Bin [31m0[m -> [32m6869[m bytes
+ .../Lib/site-packages/keras/optimizers/__init__.py |     31 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m1504[m bytes
+ .../keras/optimizers/legacy/__init__.py            |     12 [32m+[m
+ .../legacy/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m511[m bytes
+ .../keras/optimizers/schedules/__init__.py         |     33 [32m+[m
+ .../schedules/__pycache__/__init__.cpython-312.pyc |    Bin [31m0[m -> [32m750[m bytes
+ .../site-packages/keras/preprocessing/__init__.py  |     17 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m676[m bytes
+ .../keras/preprocessing/image/__init__.py          |     11 [32m+[m
+ .../image/__pycache__/__init__.cpython-312.pyc     |    Bin [31m0[m -> [32m525[m bytes
+ .../keras/preprocessing/sequence/__init__.py       |      7 [32m+[m
+ .../sequence/__pycache__/__init__.cpython-312.pyc  |    Bin [31m0[m -> [32m396[m bytes
+ .../Lib/site-packages/keras/quantizers/__init__.py |     43 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m1287[m bytes
+ venv/Lib/site-packages/keras/random/__init__.py    |     17 [32m+[m
+ .../random/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m723[m bytes
+ .../site-packages/keras/regularizers/__init__.py   |     22 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m738[m bytes
+ venv/Lib/site-packages/keras/saving/__init__.py    |     35 [32m+[m
+ .../saving/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m994[m bytes
+ venv/Lib/site-packages/keras/src/__init__.py       |     20 [32m+[m
+ .../keras/src/__pycache__/__init__.cpython-312.pyc |    Bin [31m0[m -> [32m909[m bytes
+ .../src/__pycache__/api_export.cpython-312.pyc     |    Bin [31m0[m -> [32m2262[m bytes
+ .../keras/src/__pycache__/version.cpython-312.pyc  |    Bin [31m0[m -> [32m434[m bytes
+ .../keras/src/activations/__init__.py              |    130 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m3806[m bytes
+ .../__pycache__/activations.cpython-312.pyc        |    Bin [31m0[m -> [32m23096[m bytes
+ .../keras/src/activations/activations.py           |    684 [32m+[m
+ venv/Lib/site-packages/keras/src/api_export.py     |     49 [32m+[m
+ .../keras/src/applications/__init__.py             |      0
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m182[m bytes
+ .../__pycache__/convnext.cpython-312.pyc           |    Bin [31m0[m -> [32m25504[m bytes
+ .../__pycache__/densenet.cpython-312.pyc           |    Bin [31m0[m -> [32m17450[m bytes
+ .../__pycache__/efficientnet.cpython-312.pyc       |    Bin [31m0[m -> [32m22749[m bytes
+ .../__pycache__/efficientnet_v2.cpython-312.pyc    |    Bin [31m0[m -> [32m28031[m bytes
+ .../__pycache__/imagenet_utils.cpython-312.pyc     |    Bin [31m0[m -> [32m16819[m bytes
+ .../inception_resnet_v2.cpython-312.pyc            |    Bin [31m0[m -> [32m15472[m bytes
+ .../__pycache__/inception_v3.cpython-312.pyc       |    Bin [31m0[m -> [32m15436[m bytes
+ .../__pycache__/mobilenet.cpython-312.pyc          |    Bin [31m0[m -> [32m17518[m bytes
+ .../__pycache__/mobilenet_v2.cpython-312.pyc       |    Bin [31m0[m -> [32m16538[m bytes
+ .../__pycache__/mobilenet_v3.cpython-312.pyc       |    Bin [31m0[m -> [32m23473[m bytes
+ .../__pycache__/nasnet.cpython-312.pyc             |    Bin [31m0[m -> [32m30747[m bytes
+ .../__pycache__/resnet.cpython-312.pyc             |    Bin [31m0[m -> [32m20111[m bytes
+ .../__pycache__/resnet_v2.cpython-312.pyc          |    Bin [31m0[m -> [32m7095[m bytes
+ .../applications/__pycache__/vgg16.cpython-312.pyc |    Bin [31m0[m -> [32m9898[m bytes
+ .../applications/__pycache__/vgg19.cpython-312.pyc |    Bin [31m0[m -> [32m10241[m bytes
+ .../__pycache__/xception.cpython-312.pyc           |    Bin [31m0[m -> [32m14454[m bytes
+ .../keras/src/applications/convnext.py             |    789 [32m+[m
+ .../keras/src/applications/densenet.py             |    492 [32m+[m
+ .../keras/src/applications/efficientnet.py         |    860 [32m+[m
+ .../keras/src/applications/efficientnet_v2.py      |   1366 [32m+[m
+ .../keras/src/applications/imagenet_utils.py       |    465 [32m+[m
+ .../keras/src/applications/inception_resnet_v2.py  |    396 [32m+[m
+ .../keras/src/applications/inception_v3.py         |    442 [32m+[m
+ .../keras/src/applications/mobilenet.py            |    435 [32m+[m
+ .../keras/src/applications/mobilenet_v2.py         |    497 [32m+[m
+ .../keras/src/applications/mobilenet_v3.py         |    688 [32m+[m
+ .../site-packages/keras/src/applications/nasnet.py |    869 [32m+[m
+ .../site-packages/keras/src/applications/resnet.py |    591 [32m+[m
+ .../keras/src/applications/resnet_v2.py            |    208 [32m+[m
+ .../site-packages/keras/src/applications/vgg16.py  |    248 [32m+[m
+ .../site-packages/keras/src/applications/vgg19.py  |    256 [32m+[m
+ .../keras/src/applications/xception.py             |    355 [32m+[m
+ .../site-packages/keras/src/backend/__init__.py    |    144 [32m+[m
+ .../backend/__pycache__/__init__.cpython-312.pyc   |    Bin [31m0[m -> [32m5151[m bytes
+ .../src/backend/__pycache__/config.cpython-312.pyc |    Bin [31m0[m -> [32m14961[m bytes
+ .../keras/src/backend/common/__init__.py           |     10 [32m+[m
+ .../common/__pycache__/__init__.cpython-312.pyc    |    Bin [31m0[m -> [32m683[m bytes
+ .../__pycache__/backend_utils.cpython-312.pyc      |    Bin [31m0[m -> [32m19731[m bytes
+ .../common/__pycache__/dtypes.cpython-312.pyc      |    Bin [31m0[m -> [32m10410[m bytes
+ .../__pycache__/global_state.cpython-312.pyc       |    Bin [31m0[m -> [32m3907[m bytes
+ .../__pycache__/keras_tensor.cpython-312.pyc       |    Bin [31m0[m -> [32m18340[m bytes
+ .../common/__pycache__/masking.cpython-312.pyc     |    Bin [31m0[m -> [32m1046[m bytes
+ .../common/__pycache__/name_scope.cpython-312.pyc  |    Bin [31m0[m -> [32m3256[m bytes
+ .../common/__pycache__/remat.cpython-312.pyc       |    Bin [31m0[m -> [32m7417[m bytes
+ .../__pycache__/stateless_scope.cpython-312.pyc    |    Bin [31m0[m -> [32m4801[m bytes
+ .../__pycache__/symbolic_scope.cpython-312.pyc     |    Bin [31m0[m -> [32m1517[m bytes
+ .../__pycache__/tensor_attributes.cpython-312.pyc  |    Bin [31m0[m -> [32m1704[m bytes
+ .../common/__pycache__/variables.cpython-312.pyc   |    Bin [31m0[m -> [32m32705[m bytes
+ .../keras/src/backend/common/backend_utils.py      |    561 [32m+[m
+ .../keras/src/backend/common/dtypes.py             |    324 [32m+[m
+ .../keras/src/backend/common/global_state.py       |     98 [32m+[m
+ .../keras/src/backend/common/keras_tensor.py       |    422 [32m+[m
+ .../keras/src/backend/common/masking.py            |     26 [32m+[m
+ .../keras/src/backend/common/name_scope.py         |     74 [32m+[m
+ .../keras/src/backend/common/remat.py              |    186 [32m+[m
+ .../keras/src/backend/common/stateless_scope.py    |    105 [32m+[m
+ .../keras/src/backend/common/symbolic_scope.py     |     23 [32m+[m
+ .../keras/src/backend/common/tensor_attributes.py  |     36 [32m+[m
+ .../keras/src/backend/common/variables.py          |    708 [32m+[m
+ venv/Lib/site-packages/keras/src/backend/config.py |    463 [32m+[m
+ .../keras/src/backend/jax/__init__.py              |     31 [32m+[m
+ .../jax/__pycache__/__init__.cpython-312.pyc       |    Bin [31m0[m -> [32m1337[m bytes
+ .../backend/jax/__pycache__/core.cpython-312.pyc   |    Bin [31m0[m -> [32m28264[m bytes
+ .../__pycache__/distribution_lib.cpython-312.pyc   |    Bin [31m0[m -> [32m9213[m bytes
+ .../backend/jax/__pycache__/export.cpython-312.pyc |    Bin [31m0[m -> [32m8210[m bytes
+ .../backend/jax/__pycache__/image.cpython-312.pyc  |    Bin [31m0[m -> [32m31760[m bytes
+ .../backend/jax/__pycache__/layer.cpython-312.pyc  |    Bin [31m0[m -> [32m954[m bytes
+ .../backend/jax/__pycache__/linalg.cpython-312.pyc |    Bin [31m0[m -> [32m5207[m bytes
+ .../backend/jax/__pycache__/math.cpython-312.pyc   |    Bin [31m0[m -> [32m11932[m bytes
+ .../src/backend/jax/__pycache__/nn.cpython-312.pyc |    Bin [31m0[m -> [32m74482[m bytes
+ .../backend/jax/__pycache__/numpy.cpython-312.pyc  |    Bin [31m0[m -> [32m71804[m bytes
+ .../jax/__pycache__/optimizer.cpython-312.pyc      |    Bin [31m0[m -> [32m6089[m bytes
+ .../backend/jax/__pycache__/random.cpython-312.pyc |    Bin [31m0[m -> [32m5585[m bytes
+ .../backend/jax/__pycache__/rnn.cpython-312.pyc    |    Bin [31m0[m -> [32m11673[m bytes
+ .../backend/jax/__pycache__/sparse.cpython-312.pyc |    Bin [31m0[m -> [32m14934[m bytes
+ .../jax/__pycache__/tensorboard.cpython-312.pyc    |    Bin [31m0[m -> [32m1190[m bytes
+ .../jax/__pycache__/trainer.cpython-312.pyc        |    Bin [31m0[m -> [32m37045[m bytes
+ .../site-packages/keras/src/backend/jax/core.py    |    684 [32m+[m
+ .../keras/src/backend/jax/distribution_lib.py      |    222 [32m+[m
+ .../site-packages/keras/src/backend/jax/export.py  |    188 [32m+[m
+ .../site-packages/keras/src/backend/jax/image.py   |    897 [32m+[m
+ .../site-packages/keras/src/backend/jax/layer.py   |     14 [32m+[m
+ .../site-packages/keras/src/backend/jax/linalg.py  |    103 [32m+[m
+ .../site-packages/keras/src/backend/jax/math.py    |    279 [32m+[m
+ venv/Lib/site-packages/keras/src/backend/jax/nn.py |   2050 [32m+[m
+ .../site-packages/keras/src/backend/jax/numpy.py   |   1639 [32m+[m
+ .../keras/src/backend/jax/optimizer.py             |    111 [32m+[m
+ .../site-packages/keras/src/backend/jax/random.py  |    120 [32m+[m
+ .../Lib/site-packages/keras/src/backend/jax/rnn.py |    344 [32m+[m
+ .../site-packages/keras/src/backend/jax/sparse.py  |    328 [32m+[m
+ .../keras/src/backend/jax/tensorboard.py           |     23 [32m+[m
+ .../site-packages/keras/src/backend/jax/trainer.py |   1127 [32m+[m
+ .../keras/src/backend/numpy/__init__.py            |     26 [32m+[m
+ .../numpy/__pycache__/__init__.cpython-312.pyc     |    Bin [31m0[m -> [32m1175[m bytes
+ .../backend/numpy/__pycache__/core.cpython-312.pyc |    Bin [31m0[m -> [32m22797[m bytes
+ .../numpy/__pycache__/export.cpython-312.pyc       |    Bin [31m0[m -> [32m867[m bytes
+ .../numpy/__pycache__/image.cpython-312.pyc        |    Bin [31m0[m -> [32m44124[m bytes
+ .../numpy/__pycache__/layer.cpython-312.pyc        |    Bin [31m0[m -> [32m352[m bytes
+ .../numpy/__pycache__/linalg.cpython-312.pyc       |    Bin [31m0[m -> [32m5370[m bytes
+ .../backend/numpy/__pycache__/math.cpython-312.pyc |    Bin [31m0[m -> [32m13122[m bytes
+ .../backend/numpy/__pycache__/nn.cpython-312.pyc   |    Bin [31m0[m -> [32m66258[m bytes
+ .../numpy/__pycache__/numpy.cpython-312.pyc        |    Bin [31m0[m -> [32m78259[m bytes
+ .../numpy/__pycache__/random.cpython-312.pyc       |    Bin [31m0[m -> [32m6312[m bytes
+ .../backend/numpy/__pycache__/rnn.cpython-312.pyc  |    Bin [31m0[m -> [32m8777[m bytes
+ .../numpy/__pycache__/trainer.cpython-312.pyc      |    Bin [31m0[m -> [32m12950[m bytes
+ .../site-packages/keras/src/backend/numpy/core.py  |    474 [32m+[m
+ .../keras/src/backend/numpy/export.py              |     10 [32m+[m
+ .../site-packages/keras/src/backend/numpy/image.py |   1205 [32m+[m
+ .../site-packages/keras/src/backend/numpy/layer.py |      2 [32m+[m
+ .../keras/src/backend/numpy/linalg.py              |    102 [32m+[m
+ .../site-packages/keras/src/backend/numpy/math.py  |    305 [32m+[m
+ .../site-packages/keras/src/backend/numpy/nn.py    |   1625 [32m+[m
+ .../site-packages/keras/src/backend/numpy/numpy.py |   1682 [32m+[m
+ .../keras/src/backend/numpy/random.py              |    123 [32m+[m
+ .../site-packages/keras/src/backend/numpy/rnn.py   |    243 [32m+[m
+ .../keras/src/backend/numpy/trainer.py             |    332 [32m+[m
+ .../keras/src/backend/openvino/__init__.py         |     26 [32m+[m
+ .../openvino/__pycache__/__init__.cpython-312.pyc  |    Bin [31m0[m -> [32m1187[m bytes
+ .../openvino/__pycache__/core.cpython-312.pyc      |    Bin [31m0[m -> [32m88958[m bytes
+ .../openvino/__pycache__/export.cpython-312.pyc    |    Bin [31m0[m -> [32m885[m bytes
+ .../openvino/__pycache__/image.cpython-312.pyc     |    Bin [31m0[m -> [32m13467[m bytes
+ .../openvino/__pycache__/layer.cpython-312.pyc     |    Bin [31m0[m -> [32m358[m bytes
+ .../openvino/__pycache__/linalg.cpython-312.pyc    |    Bin [31m0[m -> [32m55512[m bytes
+ .../openvino/__pycache__/math.cpython-312.pyc      |    Bin [31m0[m -> [32m46650[m bytes
+ .../openvino/__pycache__/nn.cpython-312.pyc        |    Bin [31m0[m -> [32m59274[m bytes
+ .../openvino/__pycache__/numpy.cpython-312.pyc     |    Bin [31m0[m -> [32m305729[m bytes
+ .../openvino/__pycache__/random.cpython-312.pyc    |    Bin [31m0[m -> [32m29611[m bytes
+ .../openvino/__pycache__/rnn.cpython-312.pyc       |    Bin [31m0[m -> [32m29929[m bytes
+ .../openvino/__pycache__/trainer.cpython-312.pyc   |    Bin [31m0[m -> [32m15374[m bytes
+ .../keras/src/backend/openvino/core.py             |   1727 [32m+[m
+ .../keras/src/backend/openvino/export.py           |     10 [32m+[m
+ .../keras/src/backend/openvino/image.py            |    293 [32m+[m
+ .../keras/src/backend/openvino/layer.py            |      2 [32m+[m
+ .../keras/src/backend/openvino/linalg.py           |    965 [32m+[m
+ .../keras/src/backend/openvino/math.py             |    826 [32m+[m
+ .../site-packages/keras/src/backend/openvino/nn.py |   1282 [32m+[m
+ .../keras/src/backend/openvino/numpy.py            |   5546 [32m+[m
+ .../keras/src/backend/openvino/random.py           |    472 [32m+[m
+ .../keras/src/backend/openvino/rnn.py              |    559 [32m+[m
+ .../keras/src/backend/openvino/trainer.py          |    345 [32m+[m
+ .../keras/src/backend/tensorflow/__init__.py       |     30 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m1301[m bytes
+ .../tensorflow/__pycache__/core.cpython-312.pyc    |    Bin [31m0[m -> [32m43030[m bytes
+ .../__pycache__/distribution_lib.cpython-312.pyc   |    Bin [31m0[m -> [32m3488[m bytes
+ .../tensorflow/__pycache__/export.cpython-312.pyc  |    Bin [31m0[m -> [32m1493[m bytes
+ .../tensorflow/__pycache__/image.cpython-312.pyc   |    Bin [31m0[m -> [32m40153[m bytes
+ .../tensorflow/__pycache__/layer.cpython-312.pyc   |    Bin [31m0[m -> [32m7627[m bytes
+ .../tensorflow/__pycache__/linalg.cpython-312.pyc  |    Bin [31m0[m -> [32m14335[m bytes
+ .../tensorflow/__pycache__/math.cpython-312.pyc    |    Bin [31m0[m -> [32m11822[m bytes
+ .../tensorflow/__pycache__/nn.cpython-312.pyc      |    Bin [31m0[m -> [32m63432[m bytes
+ .../tensorflow/__pycache__/numpy.cpython-312.pyc   |    Bin [31m0[m -> [32m183588[m bytes
+ .../__pycache__/optimizer.cpython-312.pyc          |    Bin [31m0[m -> [32m12870[m bytes
+ .../tensorflow/__pycache__/random.cpython-312.pyc  |    Bin [31m0[m -> [32m6888[m bytes
+ .../tensorflow/__pycache__/rnn.cpython-312.pyc     |    Bin [31m0[m -> [32m34932[m bytes
+ .../tensorflow/__pycache__/sparse.cpython-312.pyc  |    Bin [31m0[m -> [32m35931[m bytes
+ .../__pycache__/tensorboard.cpython-312.pyc        |    Bin [31m0[m -> [32m1304[m bytes
+ .../__pycache__/trackable.cpython-312.pyc          |    Bin [31m0[m -> [32m2650[m bytes
+ .../tensorflow/__pycache__/trainer.cpython-312.pyc |    Bin [31m0[m -> [32m43846[m bytes
+ .../keras/src/backend/tensorflow/core.py           |    888 [32m+[m
+ .../src/backend/tensorflow/distribution_lib.py     |     87 [32m+[m
+ .../keras/src/backend/tensorflow/export.py         |     23 [32m+[m
+ .../keras/src/backend/tensorflow/image.py          |   1076 [32m+[m
+ .../keras/src/backend/tensorflow/layer.py          |    152 [32m+[m
+ .../keras/src/backend/tensorflow/linalg.py         |    270 [32m+[m
+ .../keras/src/backend/tensorflow/math.py           |    276 [32m+[m
+ .../keras/src/backend/tensorflow/nn.py             |   1760 [32m+[m
+ .../keras/src/backend/tensorflow/numpy.py          |   3763 [32m+[m
+ .../keras/src/backend/tensorflow/optimizer.py      |    258 [32m+[m
+ .../keras/src/backend/tensorflow/random.py         |    194 [32m+[m
+ .../keras/src/backend/tensorflow/rnn.py            |    981 [32m+[m
+ .../keras/src/backend/tensorflow/sparse.py         |    782 [32m+[m
+ .../keras/src/backend/tensorflow/tensorboard.py    |     21 [32m+[m
+ .../keras/src/backend/tensorflow/trackable.py      |     64 [32m+[m
+ .../keras/src/backend/tensorflow/trainer.py        |   1004 [32m+[m
+ .../keras/src/backend/torch/__init__.py            |     45 [32m+[m
+ .../torch/__pycache__/__init__.cpython-312.pyc     |    Bin [31m0[m -> [32m1964[m bytes
+ .../backend/torch/__pycache__/core.cpython-312.pyc |    Bin [31m0[m -> [32m36542[m bytes
+ .../torch/__pycache__/export.cpython-312.pyc       |    Bin [31m0[m -> [32m8825[m bytes
+ .../torch/__pycache__/image.cpython-312.pyc        |    Bin [31m0[m -> [32m44379[m bytes
+ .../torch/__pycache__/layer.cpython-312.pyc        |    Bin [31m0[m -> [32m3454[m bytes
+ .../torch/__pycache__/linalg.cpython-312.pyc       |    Bin [31m0[m -> [32m4546[m bytes
+ .../backend/torch/__pycache__/math.cpython-312.pyc |    Bin [31m0[m -> [32m15457[m bytes
+ .../backend/torch/__pycache__/nn.cpython-312.pyc   |    Bin [31m0[m -> [32m46671[m bytes
+ .../torch/__pycache__/numpy.cpython-312.pyc        |    Bin [31m0[m -> [32m100827[m bytes
+ .../torch/__pycache__/random.cpython-312.pyc       |    Bin [31m0[m -> [32m10895[m bytes
+ .../backend/torch/__pycache__/rnn.cpython-312.pyc  |    Bin [31m0[m -> [32m30817[m bytes
+ .../torch/__pycache__/trainer.cpython-312.pyc      |    Bin [31m0[m -> [32m18355[m bytes
+ .../site-packages/keras/src/backend/torch/core.py  |    772 [32m+[m
+ .../keras/src/backend/torch/export.py              |    169 [32m+[m
+ .../site-packages/keras/src/backend/torch/image.py |   1192 [32m+[m
+ .../site-packages/keras/src/backend/torch/layer.py |     65 [32m+[m
+ .../keras/src/backend/torch/linalg.py              |     86 [32m+[m
+ .../site-packages/keras/src/backend/torch/math.py  |    400 [32m+[m
+ .../site-packages/keras/src/backend/torch/nn.py    |   1372 [32m+[m
+ .../site-packages/keras/src/backend/torch/numpy.py |   2330 [32m+[m
+ .../keras/src/backend/torch/optimizers/__init__.py |      1 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m286[m bytes
+ .../__pycache__/torch_adadelta.cpython-312.pyc     |    Bin [31m0[m -> [32m2736[m bytes
+ .../__pycache__/torch_adagrad.cpython-312.pyc      |    Bin [31m0[m -> [32m1856[m bytes
+ .../__pycache__/torch_adam.cpython-312.pyc         |    Bin [31m0[m -> [32m3279[m bytes
+ .../__pycache__/torch_adamax.cpython-312.pyc       |    Bin [31m0[m -> [32m2645[m bytes
+ .../__pycache__/torch_adamw.cpython-312.pyc        |    Bin [31m0[m -> [32m548[m bytes
+ .../__pycache__/torch_lion.cpython-312.pyc         |    Bin [31m0[m -> [32m2013[m bytes
+ .../__pycache__/torch_nadam.cpython-312.pyc        |    Bin [31m0[m -> [32m3999[m bytes
+ .../__pycache__/torch_optimizer.cpython-312.pyc    |    Bin [31m0[m -> [32m2635[m bytes
+ .../torch_parallel_optimizer.cpython-312.pyc       |    Bin [31m0[m -> [32m1881[m bytes
+ .../__pycache__/torch_rmsprop.cpython-312.pyc      |    Bin [31m0[m -> [32m3068[m bytes
+ .../__pycache__/torch_sgd.cpython-312.pyc          |    Bin [31m0[m -> [32m1969[m bytes
+ .../src/backend/torch/optimizers/torch_adadelta.py |     56 [32m+[m
+ .../src/backend/torch/optimizers/torch_adagrad.py  |     37 [32m+[m
+ .../src/backend/torch/optimizers/torch_adam.py     |     58 [32m+[m
+ .../src/backend/torch/optimizers/torch_adamax.py   |     52 [32m+[m
+ .../src/backend/torch/optimizers/torch_adamw.py    |      6 [32m+[m
+ .../src/backend/torch/optimizers/torch_lion.py     |     37 [32m+[m
+ .../src/backend/torch/optimizers/torch_nadam.py    |     74 [32m+[m
+ .../backend/torch/optimizers/torch_optimizer.py    |     45 [32m+[m
+ .../torch/optimizers/torch_parallel_optimizer.py   |     26 [32m+[m
+ .../src/backend/torch/optimizers/torch_rmsprop.py  |     64 [32m+[m
+ .../src/backend/torch/optimizers/torch_sgd.py      |     36 [32m+[m
+ .../keras/src/backend/torch/random.py              |    250 [32m+[m
+ .../site-packages/keras/src/backend/torch/rnn.py   |    872 [32m+[m
+ .../keras/src/backend/torch/trainer.py             |    519 [32m+[m
+ .../site-packages/keras/src/callbacks/__init__.py  |     17 [32m+[m
+ .../callbacks/__pycache__/__init__.cpython-312.pyc |    Bin [31m0[m -> [32m1437[m bytes
+ .../__pycache__/backup_and_restore.cpython-312.pyc |    Bin [31m0[m -> [32m11464[m bytes
+ .../callbacks/__pycache__/callback.cpython-312.pyc |    Bin [31m0[m -> [32m12768[m bytes
+ .../__pycache__/callback_list.cpython-312.pyc      |    Bin [31m0[m -> [32m14218[m bytes
+ .../__pycache__/csv_logger.cpython-312.pyc         |    Bin [31m0[m -> [32m5673[m bytes
+ .../__pycache__/early_stopping.cpython-312.pyc     |    Bin [31m0[m -> [32m7510[m bytes
+ .../callbacks/__pycache__/history.cpython-312.pyc  |    Bin [31m0[m -> [32m2094[m bytes
+ .../__pycache__/lambda_callback.cpython-312.pyc    |    Bin [31m0[m -> [32m3713[m bytes
+ .../learning_rate_scheduler.cpython-312.pyc        |    Bin [31m0[m -> [32m4093[m bytes
+ .../__pycache__/model_checkpoint.cpython-312.pyc   |    Bin [31m0[m -> [32m20442[m bytes
+ .../__pycache__/monitor_callback.cpython-312.pyc   |    Bin [31m0[m -> [32m5028[m bytes
+ .../__pycache__/orbax_checkpoint.cpython-312.pyc   |    Bin [31m0[m -> [32m13899[m bytes
+ .../__pycache__/progbar_logger.cpython-312.pyc     |    Bin [31m0[m -> [32m5654[m bytes
+ .../reduce_lr_on_plateau.cpython-312.pyc           |    Bin [31m0[m -> [32m6005[m bytes
+ .../__pycache__/remote_monitor.cpython-312.pyc     |    Bin [31m0[m -> [32m3580[m bytes
+ .../__pycache__/swap_ema_weights.cpython-312.pyc   |    Bin [31m0[m -> [32m9007[m bytes
+ .../__pycache__/tensorboard.cpython-312.pyc        |    Bin [31m0[m -> [32m32947[m bytes
+ .../__pycache__/terminate_on_nan.cpython-312.pyc   |    Bin [31m0[m -> [32m3300[m bytes
+ .../keras/src/callbacks/backup_and_restore.py      |    210 [32m+[m
+ .../site-packages/keras/src/callbacks/callback.py  |    308 [32m+[m
+ .../keras/src/callbacks/callback_list.py           |    281 [32m+[m
+ .../keras/src/callbacks/csv_logger.py              |    107 [32m+[m
+ .../keras/src/callbacks/early_stopping.py          |    154 [32m+[m
+ .../site-packages/keras/src/callbacks/history.py   |     42 [32m+[m
+ .../keras/src/callbacks/lambda_callback.py         |     87 [32m+[m
+ .../keras/src/callbacks/learning_rate_scheduler.py |     81 [32m+[m
+ .../keras/src/callbacks/model_checkpoint.py        |    470 [32m+[m
+ .../keras/src/callbacks/monitor_callback.py        |    104 [32m+[m
+ .../keras/src/callbacks/orbax_checkpoint.py        |    377 [32m+[m
+ .../keras/src/callbacks/progbar_logger.py          |    102 [32m+[m
+ .../keras/src/callbacks/reduce_lr_on_plateau.py    |    130 [32m+[m
+ .../keras/src/callbacks/remote_monitor.py          |     83 [32m+[m
+ .../keras/src/callbacks/swap_ema_weights.py        |    180 [32m+[m
+ .../keras/src/callbacks/tensorboard.py             |    688 [32m+[m
+ .../keras/src/callbacks/terminate_on_nan.py        |     69 [32m+[m
+ .../keras/src/constraints/__init__.py              |     60 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |    Bin [31m0[m -> [32m2320[m bytes
+ .../__pycache__/constraints.cpython-312.pyc        |    Bin [31m0[m -> [32m10583[m bytes
+ .../keras/src/constraints/constraints.py           |    215 [32m+[m
+ .../site-packages/keras/src/datasets/__init__.py   |     10 [32m+[m
+ .../datasets/__pycache__/__init__.cpython-312.pyc  |    Bin [31m0[m -> [32m529[m bytes
+ .../__pycache__/boston_housing.cpython-312.pyc     |    Bin [31m0[m -> [32m3728[m bytes
+ .../__pycache__/california_housing.cpython-312.pyc |    Bin [31m0[m -> [32m4927[m bytes
+ .../src/datasets/__pycache__/cifar.cpython-312.pyc |    Bin [31m0[m -> [32m1226[m bytes
+ .../datasets/__pycache__/cifar10.cpython-312.pyc   |    Bin [31m0[m -> [32m4350[m bytes
+ .../datasets/__pycache__/cifar100.cpython-312.pyc  |    Bin [31m0[m -> [32m3672[m bytes
+ .../__pycache__/fashion_mnist.cpython-312.pyc      |    Bin [31m0[m -> [32m4192[m bytes
+ .../src/datasets/__pycache__/imdb.cpython-312.pyc  |    Bin [31m0[m -> [32m8748[m bytes
+ .../src/datasets/__pycache__/mnist.cpython-312.pyc |    Bin [31m0[m -> [32m2777[m bytes
+ .../datasets/__pycache__/reuters.cpython-312.pyc   |    Bin [31m0[m -> [32m8184[m bytes
+ .../keras/src/datasets/boston_housing.py           |     74 [32m+[m
+ .../keras/src/datasets/california_housing.py       |    108 [32m+[m
+ venv/Lib/site-packages/keras/src/datasets/cifar.py |     28 [32m+[m
+ .../site-packages/keras/src/datasets/cifar10.py 

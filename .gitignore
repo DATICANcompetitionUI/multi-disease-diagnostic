@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+data/archive.zip
+*.keras
+*.h5
+# Virtual environment
+.venv/
+venv/
+env/
+./tatusgit status[5
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Build
+build/
+dist/
+
+# Node
+node_modules/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+
+# Images (if generated)
+runs/
+outputs/
+
+# Dataset cache
+.cache/
+
+# OS
+.DS_Store
+Thumbs.
+.zip
