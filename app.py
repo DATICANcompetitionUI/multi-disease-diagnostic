@@ -107,6 +107,17 @@ def predict_class_from_probabilities(probabilities: np.ndarray, class_names: Lis
     return class_name, float(probs[predicted_index])
 
 
+app = FastAPI(title="Image Classification API", version="1.0.0")
+
+@app.get("/")
+def root():
+    return {
+        "message": "Malaria Detection API is running 🚀",
+        "docs": "/docs",
+        "health": "/health",
+        "predict-malaria" : "predict-malaria"
+    }
+
 @app.get("/health")
 def health() -> Dict[str, str]:
     return {
@@ -116,7 +127,7 @@ def health() -> Dict[str, str]:
     }
 
 
-@app.post("/predict", response_model=PredictionResponse)
+@app.post("/predict-malaria", response_model=PredictionResponse)
 async def predict(file: UploadFile = File(...)):
     if not file.filename:
         raise HTTPException(status_code=400, detail="No file uploaded.")
