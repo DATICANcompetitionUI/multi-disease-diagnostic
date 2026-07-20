@@ -11,6 +11,21 @@ from fastapi import FastAPI, File, HTTPException, UploadFile
 from PIL import Image, ImageOps
 from pydantic import BaseModel
 
+import os
+import gdown
+
+def download_model():
+    if not os.path.exists("malaria_model.keras"):
+        print("Downloading model...")
+        gdown.download(
+            "https://drive.google.com/file/d/1rAHXl5a687eqoschSwWCNpXi48WNk2-Z/view?usp=drivesdk",
+            "malaria_model.keras",
+            quiet=False
+        )
+
+download_model()
+
+
 MODEL_PATH = Path(os.getenv("MODEL_PATH", "malaria_model.keras"))
 LABELS_PATH = Path(os.getenv("LABELS_PATH", "class_labels.json"))
 IMG_SIZE = tuple(
