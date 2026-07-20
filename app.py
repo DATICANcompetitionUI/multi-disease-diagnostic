@@ -107,8 +107,6 @@ def predict_class_from_probabilities(probabilities: np.ndarray, class_names: Lis
     return class_name, float(probs[predicted_index])
 
 
-app = FastAPI(title="Image Classification API", version="1.0.0")
-
 @app.get("/")
 def root():
     return {
