@@ -115,7 +115,7 @@ def root():
         "message": "Malaria Detection API is running 🚀",
         "docs": "/docs",
         "health": "/health",
-        "predict-malaria" : "predict-malaria"
+        "predict-malaria" : "/predict-malaria"
     }
 
 @app.get("/health")
