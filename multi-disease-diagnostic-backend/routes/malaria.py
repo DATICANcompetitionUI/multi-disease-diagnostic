@@ -5,7 +5,7 @@ from fastapi import (
     UploadFile,
 )
 
-from schemas.malaria import PredictionResponse
+from backend.schemas.malaria import PredictionResponse
 from services.malaria_service import (
     get_health_status,
     predict_malaria,

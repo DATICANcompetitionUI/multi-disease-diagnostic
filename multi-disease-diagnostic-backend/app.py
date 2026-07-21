@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from routes.malaria import router as malaria_router
-from routes.breast_cancer import router as breast_router
+from backend.routes.malaria import router as malaria_router
+from backend.routes.breast_cancer import router as breast_router
 app = FastAPI(
     title="Multi Disease Diagnostic API",
     version="1.0.0"

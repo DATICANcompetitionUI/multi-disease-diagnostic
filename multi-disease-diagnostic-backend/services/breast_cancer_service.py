@@ -8,7 +8,7 @@ import joblib
 import numpy as np
 import tensorflow as tf
 
-from services.downloader import download_file
+from backend.services.downloader import download_file
 
 # ==================================================
 # Prediction Labels

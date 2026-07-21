@@ -7,8 +7,8 @@ from typing import List
 import numpy as np
 import tensorflow as tf
 
-from services.downloader import download_file
-from services.image_processor import preprocess_image
+from backend.services.downloader import download_file
+from backend.services.image_processor import preprocess_image
 
 # ============================================
 # Google Drive File ID

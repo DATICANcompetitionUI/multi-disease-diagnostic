@@ -1,11 +1,11 @@
 from fastapi import APIRouter, HTTPException
 
-from schemas.breast_cancer import (
+from backend.schemas.breast_cancer import (
     BreastCancerRequest,
     BreastCancerResponse,
 )
 
-from services.breast_cancer_service import (
+from backend.services.breast_cancer_service import (
     predict_breast_cancer,
     get_health_status,
 )
