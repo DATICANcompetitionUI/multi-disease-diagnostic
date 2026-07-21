@@ -6,7 +6,7 @@ from fastapi import (
 )
 
 from backend.schemas.malaria import PredictionResponse
-from services.malaria_service import (
+from backend.services.malaria_service import (
     get_health_status,
     predict_malaria,
 )
