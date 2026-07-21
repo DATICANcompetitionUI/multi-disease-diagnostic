@@ -25,7 +25,7 @@ Undergraduate Students' Competition in the Application of Artificial Intelligenc
 | Service | URL |
 |---|---|
 | **Backend API** | `https://multi-disease-diagnostic.onrender.com` |
-| **Frontend App** | *https://multi-disease-diagnostic-frontend.onrender.com* |
+| **Frontend App** | *https://multi-disease-diagnostic-frontends.onrender.com* |
 | **API Documentation** | `https://multi-disease-diagnostic.onrender.com/docs` |
 
 ---
