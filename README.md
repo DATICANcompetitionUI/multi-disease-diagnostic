@@ -464,7 +464,7 @@ download_file(MODEL_FILE_ID, str(MODEL_PATH))
 
 ### Frontend 
 
-The React frontend is deployed on Lovable and connects to the Render backend API.
+The React frontend is deployed on Render and connects to the Render backend API.
 
 ---
 
